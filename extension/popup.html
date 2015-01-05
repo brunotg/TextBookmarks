@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Send bookmark via text!</title>
+    <style>
+      body {
+        min-width: 357px;
+        overflow-x: hidden;
+      }
+
+      img {
+        margin: 5px;
+        border: 2px solid black;
+        vertical-align: middle;
+        width: 75px;
+        height: 75px;
+      }
+    </style>
+  </head>
+
+  <body><h1>Messages</h1>
+  <p>Welcome to Messages</p>
+  <div>
+    <!-- TODO: Change this -->
+    <form action="http://localhost:3000/sendTextMessage" method="post">
+      <div data-role="fieldcontain">
+        <fieldset data-role="controlgroup">
+          <label for="destination">destination<input id="destinationNumber" type="text" value="" placeholder="" name="destinationNumber">
+          </label></fieldset>
+        <div data-role="fieldcontain"><fieldset data-type="vertical" data-role="controlgroup">
+        <label for="message">Url</label>
+          <input id="message" type="text" name="message"></fieldset>
+        </div><div data-role="fieldcontain"><input type="submit" value="Send!" data-transition="fade" data-theme="controlgroup">
+      </div></div>
+    </form>
+  </div>
+  </body>
+</html>
